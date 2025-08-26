@@ -1,5 +1,7 @@
-# MSW-TES
-An SW-TES hybrid algorithm for retrieving mountainous land surface temperature from high-resolution thermal infrared remote sensing data
+# MATLAB code developed for the MSW-TES algorithm
+
+Official codes and data for the paper entitled "An SW-TES hybrid algorithm for retrieving mountainous land surface temperature from high-resolution thermal infrared remote sensing data".
+
 
 This project includes:
 (1) The bright temperature data of five ASTER TIR bands simulated by the proposed three-dimensional thermal infrared radiation transfer model;
