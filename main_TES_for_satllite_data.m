@@ -65,7 +65,7 @@ Ld_05 = double(readgeoraster([ld_path,'Ld_05.tif']));
 Ld_01(index)=nan;Ld_02(index)=nan;Ld_03(index)=nan;Ld_04(index)=nan;Ld_05(index)=nan;
 Ld = [Ld_01,Ld_02,Ld_03,Ld_04,Ld_05];
 
-%% Step1: Implementation of the TES algorithm without considering the T-A effect 
+%% Step1: Implementation of the TES algorithm without considering the T-A effect
 [LST,LSE_01,LSE_02,LSE_03,LSE_04,LSE_05,e_max_list] = ...
     Function_TES_no_TAeffect_satllite_data(tb_01,tb_02,tb_03,...
             tb_04,tb_05,ewl,Ld_01,Ld_02,Ld_03,Ld_04,Ld_05,...
@@ -74,11 +74,12 @@ AA = max(max(LST));
 LST(LST==0)=nan;LSE_01(LSE_01==0)=nan;LSE_02(LSE_02==0)=nan;LSE_03(LSE_03==0)=nan;
 LSE_04(LSE_04==0)=nan;LSE_05(LSE_05==0)=nan;e_max_list(e_max_list==0)=nan;
 
-%% Step1: Implementation of the TES algorithm with considering the T-A effect 
+%% Step1: Implementation of the TES algorithm with considering the T-A effect
 [MLST,MLSE_01,MLSE_02,MLSE_03,MLSE_04,MLSE_05] = ...
     Function_TES_yes_TAeffect_satllite_data(SSP,SVF,tb_01,tb_02,tb_03,tb_04,tb_05,...
             LST,LSE_01,LSE_02,LSE_03,LSE_04,LSE_05,ewl,Ld_01,Ld_02,Ld_03,Ld_04,Ld_05,...
             LUT_3D,beta_ssp,e_max_list,bands_number);
+
 
 
 
