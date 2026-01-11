@@ -11,3 +11,5 @@ This project includes:
 
 Notice: Users only need to input five ASTER TIR band data, atmospheric parameters and terrain factors into the code to invert MLST.
 
+If you have any questions during the application process, please contact us by email at tangbh@kust.edu.cn or hezhiwei@kust.edu.cn.
+
